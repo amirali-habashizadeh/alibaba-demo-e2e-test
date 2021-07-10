@@ -1,0 +1,24 @@
+{
+  "name": "alibabademo",
+  "version": "1.0.0",
+  "description": "demo e2e test for alibaba",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open -b chrome",
+    "cypress:run": "cypress run --browser chrome --config videosFolder=test-result/video --headless --reporter junit --reporter-options mochaFile=test-result/xml/result-[hash].xml,toConsole=true",
+    "cypress:test": "cypress run -b firefox -s 'cypress/integration/**/*spec.js'",
+    "test": "start-test start 4100 cypress:test",
+    "dev": "start-test start 4100 cypress:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cy-api": "1.4.2",
+    "@cypress/code-coverage": "3.8.1",
+    "cypress": "5.0.0",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}

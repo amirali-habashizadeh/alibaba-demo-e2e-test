@@ -1,0 +1,12 @@
+{
+  "baseUrl": "https://alibaba.ir",
+  "modifyObstructiveCode": true,
+  "viewportHeight": 1000,
+  "viewportWidth": 1000,
+  "video": true,
+  "videoCompression": 0,
+  "reporter": "junit",
+  "projectId": "alibabademo",
+  "nodeVersion": "system",
+  "experimentalSourceRewriting": false
+}
